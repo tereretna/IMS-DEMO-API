@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMS DEMO API</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Kurator Videp YT</h2>
+
+    <div class="search-box">
+        <label><strong>YouTube API Key:</strong></label><br>
+        <input type="password" id="api-key" placeholder="Masukkan API Key..." style="width: 75%;">
+        <button onclick="togglePass()" id="btn-toggle-key">Lihat/Sembunyi</button>
+        
+        <hr>
+        
+        <input type="text" id="keyword" placeholder="Mau belajar apa hari ini?" style="width: 97%;"> <br>
+        
+        <select id="lang">
+            <option value="id">Bahasa Indonesia</option>
+            <option value="en">Bahasa Inggris</option>
+        </select>
+
+        <select id="dur">
+            <option value="any">Semua Durasi</option>
+            <option value="short">Singkat (< 4 mnt)</option>
+            <option value="medium">Sedang (4-20 mnt)</option>
+        </select>
+
+        <button onclick="mulaiPencarian()" id="btn-search">CARI VIDEO</button>
+    </div>
+
+    <div id="video-display" class="video-grid"></div>
+</div>
+
+<div id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="tutupVideo()">&times;</span>
+        <div id="player"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
