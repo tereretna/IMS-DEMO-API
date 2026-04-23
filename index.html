@@ -10,14 +10,12 @@
 <body>
 
 <div class="container">
-    <h2>Kurator Videp YT</h2>
+    <h2>YouTube Kurator</h2>
 
     <div class="search-box">
-        <label><strong>YouTube API Key:</strong></label><br>
-        <input type="password" id="api-key" placeholder="Masukkan API Key..." style="width: 75%;">
-        <button onclick="togglePass()" id="btn-toggle-key">Lihat/Sembunyi</button>
-        
-        <hr>
+        <p style="font-size: 13px; color: #666; margin-bottom: 10px;">
+            Sistem Kurasi Otomatis (API Status: <span style="color: green;">● Connected</span>)
+        </p>
         
         <input type="text" id="keyword" placeholder="Mau belajar apa hari ini?" style="width: 97%;"> <br>
         
@@ -37,14 +35,3 @@
 
     <div id="video-display" class="video-grid"></div>
 </div>
-
-<div id="modal">
-    <div class="modal-content">
-        <span class="close" onclick="tutupVideo()">&times;</span>
-        <div id="player"></div>
-    </div>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
